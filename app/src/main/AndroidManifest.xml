@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aventure" >
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.mirrorlink.android.service.ACCESS_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon100_com_255"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name=".GameActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mirrorlink.android.app.TERMINATE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mirrorlink.android.app.LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PauseActivity"
+            android:label="@string/title_activity_stories"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".StoriesActivity"
+            android:label="@string/title_activity_pause"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>

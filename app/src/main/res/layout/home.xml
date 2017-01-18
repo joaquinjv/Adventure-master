@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:aventure="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:padding="0dp" tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            >
+
+            <!--<com.aventure.Tile
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                aventure:text="Adventure"
+                aventure:backText="Audio books"
+                aventure:textColor="@android:color/white"
+                aventure:textSize="15sp"
+                aventure:backgroundColor="@android:color/holo_blue_light"
+                />-->
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@android:color/holo_blue_bright">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logo"
+                    android:src="@drawable/logo"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:adjustViewBounds="false"
+                    android:paddingTop="20dp"
+                    android:alpha="0.7"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:baselineAligned="false">
+
+            <com.aventure.Tile
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="clickA"
+                aventure:text="Start a story"
+                aventure:backText="S"
+                aventure:textColor="@android:color/white"
+                aventure:textSize="15sp"
+                aventure:backgroundColor="@android:color/holo_blue_light"
+                />
+
+            <com.aventure.Tile
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="clickB"
+                aventure:text="Buy books"
+                aventure:backText="+"
+                aventure:textColor="@android:color/white"
+                aventure:textSize="15sp"
+                aventure:backgroundColor="@android:color/holo_blue_dark"
+                />
+
+
+                    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

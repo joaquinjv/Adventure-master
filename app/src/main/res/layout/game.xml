@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:aventure="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+
+            android:orientation="horizontal" >
+
+            <com.aventure.Tile
+                android:id="@+id/buttonA"
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                aventure:text="Test A"
+                aventure:backText="A"
+                aventure:textColor="@android:color/white"
+                aventure:textSize="15dp"
+                aventure:backgroundColor="@android:color/holo_blue_light"
+                />
+
+
+            <com.aventure.Tile
+                android:id="@+id/buttonB"
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                aventure:text="Test B"
+                aventure:backText="B"
+                aventure:textColor="@android:color/white"
+                aventure:textSize="15dp"
+                aventure:backgroundColor="@android:color/holo_green_light"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:baselineAligned="false">
+
+            <com.aventure.Tile
+                android:id="@+id/buttonC"
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                aventure:text="Test C"
+                aventure:backText="C"
+                aventure:textColor="@android:color/white"
+                aventure:textSize="15dp"
+                aventure:backgroundColor="@android:color/holo_orange_light"
+                />
+
+            <com.aventure.Tile
+                android:id="@+id/buttonMenu"
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                aventure:text="Menu"
+                aventure:backText="II"
+                aventure:textColor="@android:color/white"
+                aventure:textSize="15dp"
+                aventure:backgroundColor="@android:color/holo_red_light"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.aventure.Tile
+        android:id="@+id/buttonEnd"
+        android:layout_weight="1.0"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        aventure:text="End"
+        android:onClick="end"
+        aventure:backText="Bye"
+        aventure:textColor="@android:color/white"
+        aventure:textSize="35sp"
+        aventure:backgroundColor="@android:color/holo_blue_dark"
+        />
+
+</RelativeLayout>
